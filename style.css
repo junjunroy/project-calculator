@@ -1,0 +1,151 @@
+body {
+    background-color: #EEEEEE;
+    width: 99vw;
+    height: 98vh;
+}
+
+body,
+.page,
+.cont,
+.numpad-row,
+.numpad-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page,
+.calc {
+    flex-direction: column;
+}
+
+
+.cont {
+    width: 800px;
+}
+
+.calc {
+    width: 400px;
+    height: 450px;
+    display: flex;
+    background-color: #0B192C;
+    align-items: center;
+    border-radius: 12px;
+    border: solid #DC5F00;
+}
+
+.calc-display,
+.top-btns {
+    width: 350px
+}
+
+.calc-display {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-height: 70px;
+    margin-top: 60px;
+    background-color: #577653;
+    border: solid black;
+    flex: 3;
+    font-family: "Orbitron";
+    font-size: xx-large;
+}
+
+.calc-display>span{
+    min-width: 0;
+}
+
+.top-btns {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    align-items: center;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.top-btn,
+.optr-btn {
+    border-radius: 36px;
+}
+
+.top-btn {
+    width: 70px;
+    height: 30px;
+    background-color: #373A40;
+    border-radius: 36px;
+}
+
+.main-btns {
+    width: 350px;
+    display: flex;
+    flex: 5;
+}
+
+.numpad {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.numpad-row {
+    justify-content: flex-start;
+}
+
+.top-btn,
+.numpad-btn,
+.optr-btn,
+.optr-btn-big {
+    color: #EEEEEE;
+}
+
+.numpad-btn {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    background-color: #686D76;
+    border-radius: 3px;
+    margin: 7px;
+}
+
+.optr {
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 7px;
+    flex: 3;
+}
+
+.optr-left,
+.optr-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.optr-btn {
+    width: 50px;
+    height: 35px;
+    background-color: #373A40;
+}
+
+.optr-btn-big {
+    width: 45px;
+    height: 67px;
+    border-radius: 3px;
+    background-color: #373A40;
+    align-self: center;
+}
+
+/* delete button */
+.optr-right>button:first-child {
+    background-color: #DC5F00;
+}
+
+.the-optr{
+    border-color: #39FF14;
+    color: #39FF14;
+}
